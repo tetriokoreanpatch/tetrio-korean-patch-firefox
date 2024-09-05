@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "TETR.IO 한국어 패치",
+  "version": "1.0.0",
+  "description": "TETR.IO를 위한 한국어 패치 / 일부 TETR.IO PLUS 코드를 참고하였습니다",
+  "icons": { "512": "icons/tetrio-512.png" },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "unlimitedStorage",
+    "storage",
+    "*://*.tetr.io/*",
+    "https://tetriokoreanpatch.github.io/tetrio-korean-patch/*"
+  ],
+  "optional_permissions": [
+    "downloads"
+  ],
+
+  "page_action": {
+  },
+
+  "background": {
+    "scripts": [
+      "source/bootstrap/browser/createRewriteFilter.js",
+      "source/filters/debug-tetriojs-filter.js"
+    ]
+  },
+
+  "content_scripts": [{
+    "matches": ["https://tetr.io/*"],
+    "include_globs": ["https://tetr.io/", "https://tetr.io/?*"],
+    "css": [
+    ],
+    "js": [
+    ],
+    "run_at": "document_idle"
+  }],
+
+  "web_accessible_resources": [
+    
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "korpatcher@example.com"
+    }
+  }
+}

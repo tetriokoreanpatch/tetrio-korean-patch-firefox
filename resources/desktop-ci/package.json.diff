@@ -1,0 +1,16 @@
+diff --git a/package.json b/package.json
+index 446cd07..dc95732 100644
+--- a/package.json
++++ b/package.json
+@@ -14,5 +14,10 @@
+     "electron-store": "^8.1.0",
+     "openpgp": "^5.11.1",
+     "systeminformation": "^5.22.0"
++    ,
++    "image-size": "^1.1.1",
++    "node-fetch": "2.6.1",
++    "whatwg-url": "^14.0.0",
++    "xmldom": "^0.6.0"
+   }
+ }
+\ No newline at end of file
