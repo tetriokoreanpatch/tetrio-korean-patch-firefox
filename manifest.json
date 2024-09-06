@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TETR.IO 한국어 패치",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "TETR.IO를 위한 한국어 패치 / 일부 TETR.IO PLUS 코드를 참고하였습니다",
   "icons": { "512": "icons/tetrio-512.png" },
 
